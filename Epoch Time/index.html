@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch Converter</title>
+</head>
+<body>
+    <img src="Epoch.jpg" alt="Epoch Converter" style="width: 100%; height: 100%;">
+    <h1 font-color = "red">Epoch & Unix Timestamp Conversion Tools</h1>
+    <hr>
+    <p id = "currentTime"></p>
+    <h2>Convert Epoch to Human-readable date and Vice-versa</h2>
+    <input type = "text" id = "epochInput" placeholder="Enter Epoch time">
+    <button onclick="convertEpoch()">Convert</button>
+    <p id="result"></p>
+    <h2>Convert Human Time to Epoch</h2>
+    <label for="dateInput">Date:</label>
+    <input type="date" id="dateInput">
+    <label for="timeInput">Time:</label>
+    <input type="time" id="timeInput">
+    <button onclick="convertHuman()">Convert</button>
+    <p id ='convertedEpoch'></p>
+    <h2>Convert human-time to epoch</h2>
+    <label for="yearInput"></label>
+    <input type="number" id="yearInput" placeholder="Year">
+    <label for="monthInput">-</label>
+    <input type="number" id="monthInput" placeholder="Month">
+    <label for="dayInput">-</label>
+    <input type="number" id="dayInput" placeholder="Day">
+    <label for="hourInput">:</label>
+    <input type="number" id="hourInput" placeholder="Hour">
+    <label for="minInput">:</label>
+    <input type="number" id="minInput" placeholder="Minute">
+    <label for="secInput"></label>
+    <input type="number" id="secInput" placeholder="Second">
+    <label for="timezoneInput"></label>
+    <form>
+        <label for="timezone">Choose your timezone:</label>
+        <select id="timezone" name="timezone">
+            <option value="UTC-12:00">UTC-12:00</option>
+            <option value="UTC-11:00">UTC-11:00</option>
+            <option value="UTC-10:00">UTC-10:00</option>
+            <option value="UTC-09:00">UTC-09:00</option>
+            <option value="UTC-08:00">UTC-08:00</option>
+            <option value="UTC-07:00">UTC-07:00</option>
+            <option value="UTC-06:00">UTC-06:00</option>
+            <option value="UTC-05:00">UTC-05:00</option>
+            <option value="UTC-04:00">UTC-04:00</option>
+            <option value="UTC-03:00">UTC-03:00</option>
+            <option value="UTC-02:00">UTC-02:00</option>
+            <option value="UTC-01:00">UTC-01:00</option>
+            <option value="UTC+00:00">UTC+00:00</option>
+            <option value="UTC+01:00">UTC+01:00</option>
+            <option value="UTC+02:00">UTC+02:00</option>
+            <option value="UTC+03:00">UTC+03:00</option>
+            <option value="UTC+04:00">UTC+04:00</option>
+            <option value="UTC+05:00">UTC+05:00</option>
+            <option value="UTC+05:30" selected>UTC+05:30</option>
+            <option value="UTC+06:00">UTC+06:00</option>
+            <option value="UTC+07:00">UTC+07:00</option>
+            <option value="UTC+08:00">UTC+08:00</option>
+            <option value="UTC+09:00">UTC+09:00</option>
+            <option value="UTC+10:00">UTC+10:00</option>
+            <option value="UTC+11:00">UTC+11:00</option>
+            <option value="UTC+12:00">UTC+12:00</option>
+        </select>
+    </form>
+    <button onclick="convertHuman2()">Convert</button>
+    <p id ='convertedEpoch2'></p>
+    <script src = "script.js"></script>
+</body>
+</html>
